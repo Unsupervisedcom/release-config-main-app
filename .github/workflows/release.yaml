@@ -1,0 +1,35 @@
+name: Release
+on:
+  pull_request:
+    types:
+      - closed
+    branches:
+      - main
+    paths:
+      - index.js
+      - package.json
+      - package-lock.json
+jobs:
+  release:
+    if: github.event.pull_request.merged == true
+    runs-on: ubuntu-latest
+    env:
+      NPM_TOKEN:
+        ${{ secrets.AUTOMATION_NPMJS_TOKEN }}
+    steps:
+      - uses: crazy-max/ghaction-dump-context@v1
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          # this makes the semantic-release git plugin push as the automation user, which allows us to bypass branch protection
+          token: ${{ secrets.DEPLOYER_CI_TOKEN }}
+      - id: semantic-release
+        uses: cycjimmy/semantic-release-action@v2
+        with:
+          extra_plugins: |
+            conventional-changelog-conventionalcommits
+            @semantic-release/changelog
+            @semantic-release/git
+        env:
+          # github.token can't trigger workflows, we want the created release to trigger other workflows, so use the  token
+          GITHUB_TOKEN: ${{ secrets.DEPLOYER_CI_TOKEN }}
