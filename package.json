@@ -1,5 +1,5 @@
 {
-  "name": "@unsupervised/release-config-template",
+  "name": "@unsupervised/release-config-general",
   "version": "1.0.0",
   "description": "semantic-release shareable config template repsitory",
   "main": "index.js",
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Unsupervisedcom/release-config-template.git"
+    "url": "git+https://github.com/Unsupervisedcom/release-config-general.git"
   },
   "author": "Unsupervised",
   "license": "UNLICENSED",
   "bugs": {
-    "url": "https://github.com/Unsupervisedcom/release-config-template/issues"
+    "url": "https://github.com/Unsupervisedcom/release-config-general/issues"
   },
-  "homepage": "https://github.com/Unsupervisedcom/release-config-template#readme",
+  "homepage": "https://github.com/Unsupervisedcom/release-config-general#readme",
   "dependencies": {
     "@semantic-release/changelog": "^6.0.1",
     "@semantic-release/commit-analyzer": "^9.0.2",
