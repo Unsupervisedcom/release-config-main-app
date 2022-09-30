@@ -1,6 +1,7 @@
 module.exports = {
     "branches": [
-        "main"
+        "main",
+        "staging"
     ],
     "ci": false,
     "plugins": [
