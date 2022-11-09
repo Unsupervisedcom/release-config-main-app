@@ -19,12 +19,12 @@ jobs:
     steps:
       - uses: crazy-max/ghaction-dump-context@v1
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
           # this makes the semantic-release git plugin push as the automation user, which allows us to bypass branch protection
           token: ${{ secrets.DEPLOYER_CI_TOKEN }}
       - id: semantic-release
-        uses: cycjimmy/semantic-release-action@v2
+        uses: cycjimmy/semantic-release-action@v3
         with:
           extra_plugins: |
             conventional-changelog-conventionalcommits
