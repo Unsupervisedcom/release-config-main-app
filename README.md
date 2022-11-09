@@ -1,5 +1,5 @@
-# release-config-general
-A semantic-release sharable configuration for releasing general code. This is a fairly standard configuration with no exec plugins, and no npm plugin.
+# release-config-main-app
+A semantic-release sharable configuration for releasing the Main App. It is a fork of the general action, `release-config-general`. This is a fairly standard configuration with no exec plugins, and no npm plugin.
 This release config generats release notes, a changelog, commits the changelog via the git plugin, and releases to github.
 ## Plugins
 
@@ -14,7 +14,7 @@ This shareable configuration use the following plugins:
 ## Install
 
 ```bash
-$ npm install --save-dev semantic-release @unsupervised/release-config-general
+$ npm install --save-dev semantic-release @unsupervised/release-config-main-app
 ```
 
 ## Usage
@@ -23,7 +23,7 @@ The shareable config can be configured in the [**semantic-release** configuratio
 
 ```json
 {
-  "extends": "@unsupervised/release-config-general"
+  "extends": "@unsupervised/release-config-main-app"
 }
 ```
 
