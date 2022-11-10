@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/Unsupervisedcom/release-config-main-app/compare/v1.0.0...v1.1.0) (2022-11-10)
+
+
+### Features
+
+* update package name to match new repo ([6f7255b](https://github.com/Unsupervisedcom/release-config-main-app/commit/6f7255bb591e79c2ed2a74c9eac3380c35d27653))
+
 ## [1.0.1](https://github.com/Unsupervisedcom/release-config-general/compare/v1.0.0...v1.0.1) (2022-09-30)
 
 
