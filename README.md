@@ -1,6 +1,7 @@
 # release-config-main-app
 A semantic-release sharable configuration for releasing the Main App. It is a fork of the general action, `release-config-general`. This is a fairly standard configuration with no exec plugins, and no npm plugin.
 This release config generats release notes, a changelog, commits the changelog via the git plugin, and releases to github.
+
 ## Plugins
 
 This shareable configuration use the following plugins:
